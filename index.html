@@ -7,118 +7,180 @@
 <meta name="description" content="2,167 watches worn in space from 1965-2025. Searchable by astronaut, mission, brand, model.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0a0f;--surface:#12121a;--surface2:#1a1a26;--border:#2a2a3a;--text:#e0e0e8;--text2:#8888a0;--accent:#4a9eff;--accent2:#ff6b4a;--gold:#ffd700}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
+:root{--bg:#0a0a0f;--surface:#12121a;--surface2:#1a1a26;--surface3:#22222e;--border:#2a2a3a;--border-light:#3a3a4a;--text:#e8e8f0;--text2:#9898b0;--text3:#686880;--accent:#4a9eff;--accent2:#ff6b4a;--gold:#ffd700;--omega:#e55039;--casio:#3498db;--seiko:#2ecc71;--timex:#9b59b6;--breitling:#e67e22;--rolex:#00864e;--fortis:#1abc9c;--poljot:#e74c3c}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(180deg,#0d1117 0%,var(--bg) 100%)}
-.hero h1{font-size:2.5rem;font-weight:800;margin-bottom:8px}
-.hero h1 span{color:var(--gold)}
-.hero .subtitle{color:var(--text2);font-size:1.1rem;margin-bottom:24px}
-.hero .stats{display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
+/* Hero */
+.hero{text-align:center;padding:80px 20px 48px;background:linear-gradient(180deg,#0d1420 0%,#0a0e18 40%,var(--bg) 100%);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 50%,rgba(74,158,255,.03) 0%,transparent 60%);pointer-events:none}
+.hero h1{font-size:3rem;font-weight:800;margin-bottom:6px;letter-spacing:-.02em}
+.hero h1 .emoji{font-size:2.4rem}
+.hero h1 .highlight{background:linear-gradient(135deg,var(--gold),#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero .subtitle{color:var(--text2);font-size:1.15rem;margin-bottom:32px;font-weight:400}
+.hero .stats{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:28px}
 .hero .stat{text-align:center}
-.hero .stat-num{font-size:2rem;font-weight:700;color:var(--accent)}
-.hero .stat-label{font-size:0.8rem;color:var(--text2);text-transform:uppercase;letter-spacing:1px}
+.hero .stat-num{font-size:2.4rem;font-weight:700;color:var(--text);letter-spacing:-.02em}
+.hero .stat-label{font-size:.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:2px;margin-top:2px;font-weight:600}
+.download-links{display:flex;gap:10px;justify-content:center}
+.dl-btn{padding:8px 18px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text2);font-size:.85rem;font-weight:500;transition:all .2s}
+.dl-btn:hover{background:var(--surface2);border-color:var(--accent);color:var(--accent);text-decoration:none}
 
-.container{max-width:1400px;margin:0 auto;padding:0 20px}
+/* Container */
+.container{max-width:1440px;margin:0 auto;padding:0 24px}
 
-.controls{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0;align-items:center}
-.search-box{flex:1;min-width:250px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:1rem;outline:none;transition:border-color .2s}
-.search-box:focus{border-color:var(--accent)}
-.search-box::placeholder{color:var(--text2)}
-
-select{padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:0.9rem;cursor:pointer;outline:none}
+/* Controls */
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;align-items:center}
+.search-box{flex:1;min-width:280px;padding:12px 18px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:1rem;outline:none;transition:border-color .2s}
+.search-box:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(74,158,255,.1)}
+.search-box::placeholder{color:var(--text3)}
+select{padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-size:.9rem;cursor:pointer;outline:none}
 select:focus{border-color:var(--accent)}
+.result-count{color:var(--text3);font-size:.85rem;padding:4px 0;font-weight:500}
 
-.result-count{color:var(--text2);font-size:0.9rem;padding:8px 0}
+/* Chart cards */
+.charts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:20px 0}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;overflow:hidden}
+.chart-card h3{font-size:.75rem;color:var(--text3);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:18px;font-weight:700}
 
-.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin:24px 0}
-.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;overflow:hidden}
-.chart-card h3{font-size:0.9rem;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
-.bar-row{display:flex;align-items:center;margin:6px 0;gap:8px}
-.bar-label{min-width:90px;font-size:0.85rem;text-align:right;color:var(--text2)}
-.bar-track{flex:1;height:22px;background:var(--surface2);border-radius:4px;overflow:hidden;position:relative}
-.bar-fill{height:100%;border-radius:4px;transition:width .5s ease;display:flex;align-items:center;padding-left:8px;font-size:0.75rem;font-weight:600;color:#fff;min-width:fit-content;white-space:nowrap}
-.bar-fill.omega{background:linear-gradient(90deg,#c9342e,#e55039)}
-.bar-fill.casio{background:linear-gradient(90deg,#2980b9,#3498db)}
-.bar-fill.seiko{background:linear-gradient(90deg,#27ae60,#2ecc71)}
-.bar-fill.timex{background:linear-gradient(90deg,#8e44ad,#9b59b6)}
-.bar-fill.breitling{background:linear-gradient(90deg,#d35400,#e67e22)}
-.bar-fill.rolex{background:linear-gradient(90deg,#006039,#00864e)}
-.bar-fill.default{background:linear-gradient(90deg,#555,#777)}
+/* Bar charts */
+.bar-row{display:flex;align-items:center;margin:5px 0;gap:10px}
+.bar-label{min-width:80px;font-size:.82rem;text-align:right;color:var(--text2);font-weight:500}
+.bar-track{flex:1;height:24px;background:var(--surface2);border-radius:6px;overflow:hidden;position:relative}
+.bar-fill{height:100%;border-radius:6px;transition:width .6s cubic-bezier(.4,0,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:.75rem;font-weight:700;color:rgba(255,255,255,.9);min-width:36px}
 
-.timeline{display:flex;align-items:flex-end;gap:2px;height:100px;padding-top:10px}
-.timeline-bar{flex:1;background:var(--accent);border-radius:2px 2px 0 0;min-width:12px;position:relative;cursor:pointer;transition:opacity .2s}
-.timeline-bar:hover{opacity:.8}
-.timeline-bar .tip{display:none;position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:4px 8px;border-radius:4px;font-size:.75rem;white-space:nowrap;z-index:10}
+/* Timeline */
+.timeline{display:flex;align-items:flex-end;gap:1px;height:90px;padding-top:8px}
+.timeline-bar{flex:1;background:var(--accent);border-radius:3px 3px 0 0;min-width:8px;position:relative;cursor:pointer;transition:all .2s;opacity:.7}
+.timeline-bar:hover{opacity:1;transform:scaleY(1.05);transform-origin:bottom}
+.timeline-bar .tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--surface3);color:var(--text);padding:4px 10px;border-radius:6px;font-size:.75rem;white-space:nowrap;z-index:10;border:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,.4)}
 .timeline-bar:hover .tip{display:block}
-.timeline-labels{display:flex;justify-content:space-between;color:var(--text2);font-size:.75rem;margin-top:4px}
+.timeline-labels{display:flex;justify-content:space-between;color:var(--text3);font-size:.7rem;margin-top:6px;font-weight:600}
 
-table{width:100%;border-collapse:collapse;margin:16px 0}
+/* ========== TOP 30 SECTION ========== */
+.top-refs-section{margin:32px 0;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:32px;overflow:hidden}
+.top-refs-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.top-refs-header h3{font-size:1.1rem;color:var(--text);font-weight:700;letter-spacing:-.01em}
+.top-refs-header h3 .trophy{margin-right:8px}
+.top-refs-header .legend{display:flex;gap:12px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:5px;font-size:.7rem;color:var(--text3);font-weight:500}
+.legend-dot{width:8px;height:8px;border-radius:50%}
+
+/* Podium — top 3 */
+.podium{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:28px}
+.podium-card{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center;position:relative;transition:transform .2s,border-color .2s}
+.podium-card:hover{transform:translateY(-2px);border-color:var(--border-light)}
+.podium-card.gold{border-color:rgba(255,215,0,.3);background:linear-gradient(180deg,rgba(255,215,0,.06) 0%,var(--surface2) 100%)}
+.podium-card.silver{border-color:rgba(192,192,192,.2);background:linear-gradient(180deg,rgba(192,192,192,.04) 0%,var(--surface2) 100%)}
+.podium-card.bronze{border-color:rgba(205,127,50,.2);background:linear-gradient(180deg,rgba(205,127,50,.04) 0%,var(--surface2) 100%)}
+.podium-rank{font-size:2rem;margin-bottom:4px}
+.podium-name{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:4px}
+.podium-count{font-size:1.8rem;font-weight:800;margin-bottom:2px}
+.podium-card.gold .podium-count{color:var(--gold)}
+.podium-card.silver .podium-count{color:#c0c0c0}
+.podium-card.bronze .podium-count{color:#cd7f32}
+.podium-missions{font-size:.75rem;color:var(--text3);font-weight:500}
+
+/* Ranked list — positions 4-30 */
+.ref-list{display:flex;flex-direction:column;gap:4px}
+.ref-item{display:grid;grid-template-columns:32px 1fr 200px 52px;align-items:center;gap:12px;padding:8px 12px;border-radius:8px;transition:background .15s}
+.ref-item:hover{background:var(--surface2)}
+.ref-rank{font-size:.8rem;color:var(--text3);font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.ref-name{font-size:.9rem;font-weight:600;color:var(--text)}
+.ref-bar-wrap{height:20px;background:var(--surface2);border-radius:5px;overflow:hidden}
+.ref-bar{height:100%;border-radius:5px;transition:width .6s cubic-bezier(.4,0,.2,1);min-width:2px}
+.ref-count{font-size:.85rem;font-weight:700;color:var(--text2);text-align:right;font-variant-numeric:tabular-nums}
+
+/* Table */
+table{width:100%;border-collapse:separate;border-spacing:0;margin:16px 0}
 thead{position:sticky;top:0;z-index:5}
-th{background:var(--surface2);padding:10px 12px;text-align:left;font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);cursor:pointer;user-select:none;border-bottom:2px solid var(--border);white-space:nowrap}
+th{background:var(--surface2);padding:12px 14px;text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:.8px;color:var(--text3);cursor:pointer;user-select:none;border-bottom:2px solid var(--border);white-space:nowrap;font-weight:700}
+th:first-child{border-radius:8px 0 0 0}
+th:last-child{border-radius:0 8px 0 0}
 th:hover{color:var(--accent)}
 th .sort-icon{margin-left:4px;opacity:.3}
 th.sorted .sort-icon{opacity:1;color:var(--accent)}
-td{padding:10px 12px;border-bottom:1px solid var(--border);font-size:.9rem;vertical-align:top}
-tr:hover td{background:var(--surface)}
-.img-thumb{width:50px;height:50px;object-fit:cover;border-radius:4px;cursor:pointer;border:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:.88rem;vertical-align:middle}
+tr:hover td{background:rgba(74,158,255,.03)}
+
+.img-thumb{width:48px;height:48px;object-fit:cover;border-radius:6px;cursor:pointer;border:1px solid var(--border);transition:border-color .2s}
 .img-thumb:hover{border-color:var(--accent)}
-.brand-tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:.75rem;font-weight:600;background:var(--surface2);color:var(--text2)}
-.brand-omega{background:#c9342e22;color:#e55039}
-.brand-casio{background:#2980b922;color:#3498db}
-.brand-seiko{background:#27ae6022;color:#2ecc71}
-.brand-timex{background:#8e44ad22;color:#9b59b6}
-.brand-rolex{background:#00603922;color:#00864e}
+.brand-tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.73rem;font-weight:600}
+.brand-omega{background:rgba(229,80,57,.12);color:#e55039}
+.brand-casio{background:rgba(52,152,219,.12);color:#3498db}
+.brand-seiko{background:rgba(46,204,113,.12);color:#2ecc71}
+.brand-timex{background:rgba(155,89,182,.12);color:#9b59b6}
+.brand-rolex{background:rgba(0,134,78,.12);color:#00864e}
+.brand-breitling{background:rgba(230,126,34,.12);color:#e67e22}
+.brand-tag:not([class*="brand-"]){background:var(--surface2);color:var(--text2)}
 
-.pagination{display:flex;justify-content:center;gap:8px;padding:24px 0}
-.page-btn{padding:8px 14px;background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);cursor:pointer;font-size:.9rem}
+/* Pagination */
+.pagination{display:flex;justify-content:center;gap:6px;padding:24px 0}
+.page-btn{padding:8px 14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text2);cursor:pointer;font-size:.85rem;font-weight:500;transition:all .15s}
 .page-btn:hover{border-color:var(--accent);color:var(--accent)}
-.page-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
-.page-btn:disabled{opacity:.3;cursor:default}
+.page-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.page-btn:disabled{opacity:.3;cursor:default;pointer-events:none}
 
-footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:.85rem;border-top:1px solid var(--border);margin-top:40px}
-
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:100;justify-content:center;align-items:center}
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:100;justify-content:center;align-items:center;backdrop-filter:blur(8px)}
 .modal-overlay.show{display:flex}
-.modal-overlay img{max-width:90vw;max-height:90vh;border-radius:8px;border:2px solid var(--border)}
-.modal-overlay .close{position:absolute;top:20px;right:20px;color:#fff;font-size:2rem;cursor:pointer}
+.modal-overlay img{max-width:90vw;max-height:90vh;border-radius:8px;border:1px solid var(--border)}
+.modal-overlay .close{position:absolute;top:20px;right:24px;color:#fff;font-size:2rem;cursor:pointer;opacity:.6;transition:opacity .2s}
+.modal-overlay .close:hover{opacity:1}
 
-.download-links{display:flex;gap:12px;justify-content:center;margin:12px 0}
-.dl-btn{padding:8px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--accent);font-size:.85rem;transition:all .2s}
-.dl-btn:hover{background:var(--accent);color:#fff;text-decoration:none}
+/* Footer */
+footer{text-align:center;padding:48px 20px;color:var(--text3);font-size:.82rem;border-top:1px solid var(--border);margin-top:48px;line-height:1.8}
+footer a{color:var(--text2)}
+footer strong{color:var(--text2);font-weight:600}
 
+/* Responsive */
+@media(max-width:1024px){
+  .charts{grid-template-columns:1fr 1fr}
+  .podium{grid-template-columns:1fr 1fr 1fr}
+  .ref-item{grid-template-columns:28px 1fr 140px 44px}
+}
 @media(max-width:768px){
-  .hero h1{font-size:1.8rem}
-  .hero .stats{gap:16px}
-  .hero .stat-num{font-size:1.5rem}
+  .hero h1{font-size:2rem}
+  .hero .stats{gap:24px}
+  .hero .stat-num{font-size:1.8rem}
   .controls{flex-direction:column}
-  th,td{padding:6px 8px;font-size:.8rem}
   .charts{grid-template-columns:1fr}
+  .podium{grid-template-columns:1fr}
+  .ref-item{grid-template-columns:28px 1fr 100px 40px;gap:8px}
+  .ref-name{font-size:.82rem}
+  .top-refs-header{flex-direction:column;gap:12px;align-items:flex-start}
+  th,td{padding:8px 10px;font-size:.8rem}
+}
+@media(max-width:480px){
+  .ref-item{grid-template-columns:24px 1fr 44px;gap:6px}
+  .ref-bar-wrap{display:none}
+  .hero{padding:48px 16px 32px}
 }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <div class="hero">
-  <h1>🚀 Space <span>Watches</span> ⌚</h1>
+  <h1><span class="emoji">🚀</span> Space <span class="highlight">Watches</span> <span class="emoji">⌚</span></h1>
   <p class="subtitle">Every watch worn in space — 2,167 records from 1965 to 2025</p>
   <div class="stats">
     <div class="stat"><div class="stat-num" id="stat-records">2,167</div><div class="stat-label">Records</div></div>
-    <div class="stat"><div class="stat-num" id="stat-brands">40+</div><div class="stat-label">Brands</div></div>
-    <div class="stat"><div class="stat-num" id="stat-missions">300+</div><div class="stat-label">Missions</div></div>
+    <div class="stat"><div class="stat-num" id="stat-brands">103</div><div class="stat-label">Brands</div></div>
+    <div class="stat"><div class="stat-num" id="stat-missions">390</div><div class="stat-label">Missions</div></div>
     <div class="stat"><div class="stat-num" id="stat-years">60</div><div class="stat-label">Years</div></div>
   </div>
-  <div class="download-links" style="margin-top:20px">
+  <div class="download-links">
     <a href="data.json" class="dl-btn" download>📥 JSON</a>
     <a href="data.csv" class="dl-btn" download>📥 CSV</a>
-    <a href="https://github.com/rayhe/space-watches" class="dl-btn">🐙 GitHub</a>
+    <a href="https://github.com/rayhe/space-watches" class="dl-btn" target="_blank">🐙 GitHub</a>
   </div>
 </div>
 
 <div class="container">
   <div class="controls">
-    <input type="text" class="search-box" id="search" placeholder="Search astronaut, mission, brand, model..." autofocus>
+    <input type="text" class="search-box" id="search" placeholder="Search astronaut, mission, brand, model…" autofocus>
     <select id="filter-decade"><option value="">All Decades</option></select>
     <select id="filter-brand"><option value="">All Brands</option></select>
     <select id="filter-country"><option value="">All Countries</option></select>
@@ -142,12 +204,14 @@ footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:.85rem;b
     </div>
   </div>
 
-
   <!-- Top 30 Watch References Section -->
-  <div class="chart-card" style="margin:24px 0">
-    <h3>🏆 Top 30 Watch References in Space</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:12px" id="top-refs">
+  <div class="top-refs-section" id="top-refs-section">
+    <div class="top-refs-header">
+      <h3><span class="trophy">🏆</span> Top 30 Watch References in Space</h3>
+      <div class="legend" id="brand-legend"></div>
     </div>
+    <div class="podium" id="podium"></div>
+    <div class="ref-list" id="ref-list"></div>
   </div>
 
   <div style="overflow-x:auto">
@@ -178,13 +242,12 @@ footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:.85rem;b
 </div>
 
 <footer>
-  Data compiled by <strong>Robert Jackson</strong> &amp; the <a href="https://www.facebook.com/groups/spacewatches/" target="_blank">Space Watches Facebook Group</a>.
+  Data compiled by <strong>Robert Jackson</strong> &amp; the <a href="https://www.facebook.com/groups/spacewatches/" target="_blank">Space Watches Facebook Group</a>.<br>
   Original dataset on <a href="https://lookerstudio.google.com/u/0/reporting/40738bd5-c07f-41f2-aaad-ca5b0aaf9602/page/ZNSUB" target="_blank">Looker Studio</a>.
   Site by <a href="https://liveinthefuture.org" target="_blank">Live in the Future</a>.
 </footer>
 
 <script>
-
 let DATA = [];
 let filtered = [];
 let sortCol = 'date';
@@ -192,25 +255,96 @@ let sortDir = 1;
 let page = 0;
 const PER_PAGE = 50;
 
+const BRAND_COLORS = {
+  omega:'#e55039',casio:'#3498db',seiko:'#2ecc71',timex:'#9b59b6',
+  breitling:'#e67e22',rolex:'#00864e',fortis:'#1abc9c',poljot:'#e74c3c',
+  tag:'#f1c40f',glycine:'#e67e22',bulova:'#95a5a6',polar:'#2980b9',
+  citizen:'#16a085',garmin:'#2c3e50',hamilton:'#d35400',suunto:'#8e44ad'
+};
+const BRAND_GRADIENTS = {
+  omega:'linear-gradient(90deg,#c9342e,#e55039)',
+  casio:'linear-gradient(90deg,#2471a3,#3498db)',
+  seiko:'linear-gradient(90deg,#1e8449,#2ecc71)',
+  timex:'linear-gradient(90deg,#7d3c98,#9b59b6)',
+  breitling:'linear-gradient(90deg,#ca6f1e,#e67e22)',
+  rolex:'linear-gradient(90deg,#006039,#00864e)',
+  default:'linear-gradient(90deg,#555,#777)'
+};
+
+function getBrandColor(name) {
+  const n = name.toLowerCase();
+  for (const [k,v] of Object.entries(BRAND_COLORS)) { if (n.includes(k)) return v; }
+  return '#6c7a89';
+}
+function getBrandGradient(name) {
+  const n = name.toLowerCase();
+  for (const [k,v] of Object.entries(BRAND_GRADIENTS)) { if (n.includes(k)) return v; }
+  return BRAND_GRADIENTS.default;
+}
+
+const TOP_REFS = [
+  ['Omega X-33', 371], ['Casio G-Shock DW5600', 198], ['Omega Speedmaster', 143],
+  ['Seiko A829-6019', 104], ['Omega Speedmaster Moonwatch', 74], ['Seiko A829-6029', 66],
+  ['Timex Ironman', 38], ['Omega Speedmaster Alaska III', 36], ['Omega Speedmaster 105.012', 31],
+  ['Poljot 3133', 25], ['Casio AQ-100W', 17], ['Casio G-Shock DW500', 17],
+  ['Timex Ironman Datalink', 17], ['Omega Speedmaster 105.003', 14], ['Polar Accurex II', 14],
+  ['Breitling Aerospace', 14], ['Fortis Official Cosmonauts', 13], ['Omega Speedmaster Mark II', 12],
+  ['Seiko 7A28-7000', 11], ['Omega Flightmaster', 10], ['Casio G-Shock DW5900', 10],
+  ['Omega Speedmaster X-33 (2nd gen)', 9], ['Breitling Navitimer', 9], ['TAG Heuer S/el', 8],
+  ['Omega Speedmaster 145.012', 8], ['Casio W-86', 7], ['Rolex GMT-Master', 7],
+  ['Glycine Airman', 7], ['Bulova Accutron Astronaut', 6], ['Fortis B-42', 6]
+];
+
+function renderTopRefs() {
+  const maxCount = TOP_REFS[0][1];
+
+  // Brand legend
+  const legendBrands = ['Omega','Casio','Seiko','Timex','Breitling','Rolex','Fortis','Poljot'];
+  document.getElementById('brand-legend').innerHTML = legendBrands.map(b =>
+    `<span class="legend-item"><span class="legend-dot" style="background:${getBrandColor(b)}"></span>${b}</span>`
+  ).join('');
+
+  // Podium — top 3
+  const medals = ['🥇','🥈','🥉'];
+  const classes = ['gold','silver','bronze'];
+  document.getElementById('podium').innerHTML = TOP_REFS.slice(0,3).map(([name, count], i) =>
+    `<div class="podium-card ${classes[i]}">
+      <div class="podium-rank">${medals[i]}</div>
+      <div class="podium-name">${name}</div>
+      <div class="podium-count">${count}</div>
+      <div class="podium-missions">space missions</div>
+    </div>`
+  ).join('');
+
+  // Ranked list — 4 through 30
+  const scale = TOP_REFS[3][1]; // max for items 4+
+  document.getElementById('ref-list').innerHTML = TOP_REFS.slice(3).map(([name, count], i) => {
+    const rank = i + 4;
+    const pct = Math.max(3, (count / scale * 100));
+    const color = getBrandColor(name);
+    return `<div class="ref-item">
+      <span class="ref-rank">${rank}</span>
+      <span class="ref-name">${name}</span>
+      <div class="ref-bar-wrap"><div class="ref-bar" style="width:${pct.toFixed(1)}%;background:${color}"></div></div>
+      <span class="ref-count">${count}</span>
+    </div>`;
+  }).join('');
+}
+
 async function init() {
   const resp = await fetch('data.json');
   DATA = await resp.json();
-  
-  // Populate filter dropdowns
   populateFilters();
-  
-  // Initial render
   applyFilters();
   renderCharts(DATA);
-  
-  // Update stats
+  renderTopRefs();
+
   const brands = new Set(DATA.map(r => r.watch_brand).filter(Boolean));
   const missions = new Set(DATA.map(r => r.mission).filter(Boolean));
   document.getElementById('stat-records').textContent = DATA.length.toLocaleString();
   document.getElementById('stat-brands').textContent = brands.size;
   document.getElementById('stat-missions').textContent = missions.size;
-  
-  // Event listeners
+
   document.getElementById('search').addEventListener('input', debounce(() => { page = 0; applyFilters(); }, 200));
   document.querySelectorAll('select').forEach(s => s.addEventListener('change', () => { page = 0; applyFilters(); }));
   document.querySelectorAll('th[data-sort]').forEach(th => {
@@ -224,12 +358,13 @@ async function init() {
       renderTable();
     });
   });
-  
-  // Modal
   document.getElementById('modal').addEventListener('click', e => {
     if (e.target.id === 'modal' || e.target.id === 'modal-close') {
       document.getElementById('modal').classList.remove('show');
     }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.getElementById('modal').classList.remove('show');
   });
 }
 
@@ -244,16 +379,13 @@ function populateFilters() {
   const programs = {};
   DATA.forEach(r => { if (r.program) programs[r.program] = (programs[r.program] || 0) + 1; });
   const topPrograms = Object.entries(programs).sort((a,b) => b[1] - a[1]).map(e => e[0]);
-  
+
   const decadeEl = document.getElementById('filter-decade');
   decades.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = d; decadeEl.appendChild(o); });
-  
   const brandEl = document.getElementById('filter-brand');
   topBrands.forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = `${b} (${brands[b]})`; brandEl.appendChild(o); });
-  
   const countryEl = document.getElementById('filter-country');
   topCountries.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = `${c} (${countries[c]})`; countryEl.appendChild(o); });
-  
   const programEl = document.getElementById('filter-program');
   topPrograms.forEach(p => { const o = document.createElement('option'); o.value = p; o.textContent = `${p} (${programs[p]})`; programEl.appendChild(o); });
 }
@@ -264,7 +396,7 @@ function applyFilters() {
   const brand = document.getElementById('filter-brand').value;
   const country = document.getElementById('filter-country').value;
   const program = document.getElementById('filter-program').value;
-  
+
   filtered = DATA.filter(r => {
     if (decade && r.decade !== decade) return false;
     if (brand && r.watch_brand !== brand) return false;
@@ -277,27 +409,23 @@ function applyFilters() {
     }
     return true;
   });
-  
   document.getElementById('result-count').textContent = `${filtered.length.toLocaleString()} of ${DATA.length.toLocaleString()} records`;
   renderCharts(filtered);
   renderTable();
 }
 
 function renderCharts(data) {
-  // Brand chart
   const brands = {};
   data.forEach(r => { if (r.watch_brand) brands[r.watch_brand] = (brands[r.watch_brand] || 0) + 1; });
   const topBrands = Object.entries(brands).sort((a,b) => b[1] - a[1]).slice(0, 8);
   const maxBrand = topBrands[0]?.[1] || 1;
-  const brandColors = {omega:'omega',casio:'casio',seiko:'seiko',timex:'timex',breitling:'breitling',rolex:'rolex'};
-  
+
   document.getElementById('brand-chart').innerHTML = topBrands.map(([name, count]) => {
     const pct = (count / maxBrand * 100).toFixed(1);
-    const cls = brandColors[name.toLowerCase()] || 'default';
-    return `<div class="bar-row"><span class="bar-label">${name}</span><div class="bar-track"><div class="bar-fill ${cls}" style="width:${pct}%">${count}</div></div></div>`;
+    const grad = getBrandGradient(name);
+    return `<div class="bar-row"><span class="bar-label">${name}</span><div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${grad}">${count}</div></div></div>`;
   }).join('');
-  
-  // Timeline
+
   const years = {};
   data.forEach(r => { if (r.year) years[r.year] = (years[r.year] || 0) + 1; });
   const allYears = Object.keys(years).map(Number).filter(y => y >= 1960 && y <= 2030).sort((a,b) => a - b);
@@ -308,23 +436,27 @@ function renderCharts(data) {
     for (let y = minY; y <= maxY; y++) {
       const c = years[y] || 0;
       const h = c > 0 ? Math.max(4, (c / maxCount) * 100) : 0;
-      html += `<div class="timeline-bar" style="height:${h}%"><span class="tip">${y}: ${c}</span></div>`;
+      html += `<div class="timeline-bar" style="height:${h}%"><span class="tip">${y}: ${c} watches</span></div>`;
     }
     html += '</div>';
     document.getElementById('timeline-chart').innerHTML = html;
     document.getElementById('tl-start').textContent = minY;
     document.getElementById('tl-end').textContent = maxY;
   }
-  
-  // Country chart
+
   const countries = {};
   data.forEach(r => { if (r.country) countries[r.country] = (countries[r.country] || 0) + 1; });
   const topCountries = Object.entries(countries).sort((a,b) => b[1] - a[1]).slice(0, 8);
   const maxCountry = topCountries[0]?.[1] || 1;
-  
+  const countryFlags = {
+    'United States':'🇺🇸','Russia':'🇷🇺','Japan':'🇯🇵','France':'🇫🇷','Germany':'🇩🇪',
+    'Canada':'🇨🇦','Italy':'🇮🇹','United Kingdom':'🇬🇧','China':'🇨🇳','India':'🇮🇳',
+    'Saudi Arabia':'🇸🇦','Israel':'🇮🇱','Brazil':'🇧🇷','South Korea':'🇰🇷','UAE':'🇦🇪'
+  };
   document.getElementById('country-chart').innerHTML = topCountries.map(([name, count]) => {
     const pct = (count / maxCountry * 100).toFixed(1);
-    return `<div class="bar-row"><span class="bar-label">${name}</span><div class="bar-track"><div class="bar-fill default" style="width:${pct}%">${count}</div></div></div>`;
+    const flag = countryFlags[name] || '';
+    return `<div class="bar-row"><span class="bar-label">${flag} ${name}</span><div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:linear-gradient(90deg,#2a5298,#4a9eff)">${count}</div></div></div>`;
   }).join('');
 }
 
@@ -337,19 +469,19 @@ function renderTable() {
     }
     return va.localeCompare(vb) * sortDir;
   });
-  
   const start = page * PER_PAGE;
   const pageData = sorted.slice(start, start + PER_PAGE);
-  
   const tbody = document.getElementById('tbody');
+
   tbody.innerHTML = pageData.map(r => {
-    const brandClass = r.watch_brand ? 'brand-' + r.watch_brand.toLowerCase().replace(/\s/g, '') : '';
+    const brandKey = (r.watch_brand||'').toLowerCase().replace(/[\s\/]/g, '');
+    const brandClass = ['omega','casio','seiko','timex','rolex','breitling'].includes(brandKey) ? `brand-${brandKey}` : '';
     const imgSrc = r.image_url || '';
     const fallbackSrc = r.original_image_url || '';
     const imgCell = imgSrc
       ? `<img class="img-thumb" src="${imgSrc}" alt="${esc(r.astronaut)}" loading="lazy" onerror="if(this.dataset.tried!=='1'&&'${fallbackSrc}'){this.dataset.tried='1';this.src='${fallbackSrc}'}else{this.style.display='none'}" onclick="showModal(this.src)">`
-      : '<span style="color:var(--text2)">—</span>';
-    const notes = (r.notes || '').substring(0, 80) + ((r.notes || '').length > 80 ? '...' : '');
+      : '<span style="color:var(--text3)">—</span>';
+    const notes = (r.notes || '').substring(0, 80) + ((r.notes || '').length > 80 ? '…' : '');
     return `<tr>
       <td>${imgCell}</td>
       <td><strong>${esc(r.astronaut)}</strong></td>
@@ -363,28 +495,21 @@ function renderTable() {
       <td title="${esc(r.notes)}">${esc(notes)}</td>
     </tr>`;
   }).join('');
-  
-  // Pagination
+
   const totalPages = Math.ceil(filtered.length / PER_PAGE);
   const pag = document.getElementById('pagination');
   if (totalPages <= 1) { pag.innerHTML = ''; return; }
-  
-  let html = '';
-  html += `<button class="page-btn" ${page === 0 ? 'disabled' : ''} onclick="goPage(${page-1})">← Prev</button>`;
-  
-  const range = [];
-  range.push(0);
+  let html = `<button class="page-btn" ${page === 0 ? 'disabled' : ''} onclick="goPage(${page-1})">← Prev</button>`;
+  const range = [0];
   for (let i = Math.max(1, page - 2); i <= Math.min(totalPages - 2, page + 2); i++) range.push(i);
   range.push(totalPages - 1);
   const unique = [...new Set(range)].sort((a,b) => a - b);
-  
   let last = -1;
   unique.forEach(p => {
-    if (last >= 0 && p - last > 1) html += '<span style="color:var(--text2);padding:0 4px">...</span>';
+    if (last >= 0 && p - last > 1) html += '<span style="color:var(--text3);padding:0 4px">…</span>';
     html += `<button class="page-btn ${p === page ? 'active' : ''}" onclick="goPage(${p})">${p + 1}</button>`;
     last = p;
   });
-  
   html += `<button class="page-btn" ${page >= totalPages - 1 ? 'disabled' : ''} onclick="goPage(${page+1})">Next →</button>`;
   pag.innerHTML = html;
 }
@@ -395,40 +520,6 @@ function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.
 function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
 
 init();
-
-  // Render Top 30 References
-  const TOP_REFS = [
-    ['Omega X-33', 371], ['Casio G-Shock DW5600', 198], ['Omega Speedmaster', 143],
-    ['Seiko A829-6019', 104], ['Omega Speedmaster Moonwatch', 74], ['Seiko A829-6029', 66],
-    ['Timex Ironman', 38], ['Omega Speedmaster Alaska III', 36], ['Omega Speedmaster 105.012', 31],
-    ['Poljot 3133', 25], ['Casio AQ-100W', 17], ['Casio G-Shock DW500', 17],
-    ['Timex Ironman Datalink', 17], ['Omega Speedmaster 105.003', 14], ['Polar Accurex II', 14],
-    ['Breitling Aerospace', 14], ['Fortis Official Cosmonauts', 13], ['Omega Speedmaster Mark II', 12],
-    ['Seiko 7A28-7000', 11], ['Omega Flightmaster', 10], ['Casio G-Shock DW5900', 10],
-    ['Omega Speedmaster X-33 (2nd gen)', 9], ['Breitling Navitimer', 9], ['TAG Heuer S/el', 8],
-    ['Omega Speedmaster 145.012', 8], ['Casio W-86', 7], ['Rolex GMT-Master', 7],
-    ['Glycine Airman', 7], ['Bulova Accutron Astronaut', 6], ['Fortis B-42', 6]
-  ];
-  const maxRef = TOP_REFS[0][1];
-  const refColors = {omega:'#e55039',casio:'#3498db',seiko:'#2ecc71',timex:'#9b59b6',breitling:'#e67e22',rolex:'#00864e',poljot:'#e74c3c',fortis:'#1abc9c',tag:'#f39c12',glycine:'#e67e22',bulova:'#95a5a6',polar:'#3498db'};
-  function getRefColor(name) {
-    const n = name.toLowerCase();
-    for (const [k,v] of Object.entries(refColors)) { if (n.includes(k)) return v; }
-    return '#777';
-  }
-  document.getElementById('top-refs').innerHTML = TOP_REFS.map(([name, count], i) => {
-    const pct = (count / maxRef * 100).toFixed(1);
-    const color = getRefColor(name);
-    const rank = i + 1;
-    return `<div style="display:flex;align-items:center;gap:8px;font-size:.85rem">
-      <span style="color:var(--text2);min-width:24px;text-align:right">${rank}.</span>
-      <span style="min-width:180px;color:var(--text)">${name}</span>
-      <div style="flex:1;height:18px;background:var(--surface2);border-radius:3px;overflow:hidden">
-        <div style="width:${pct}%;height:100%;background:${color};border-radius:3px;display:flex;align-items:center;padding-left:6px;font-size:.7rem;color:#fff;font-weight:600">${count}</div>
-      </div>
-    </div>`;
-  }).join('');
-
 </script>
 </body>
 </html>
