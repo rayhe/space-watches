@@ -142,6 +142,14 @@ footer{text-align:center;padding:40px 20px;color:var(--text2);font-size:.85rem;b
     </div>
   </div>
 
+
+  <!-- Top 30 Watch References Section -->
+  <div class="chart-card" style="margin:24px 0">
+    <h3>🏆 Top 30 Watch References in Space</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:12px" id="top-refs">
+    </div>
+  </div>
+
   <div style="overflow-x:auto">
     <table>
       <thead>
@@ -336,8 +344,10 @@ function renderTable() {
   const tbody = document.getElementById('tbody');
   tbody.innerHTML = pageData.map(r => {
     const brandClass = r.watch_brand ? 'brand-' + r.watch_brand.toLowerCase().replace(/\s/g, '') : '';
-    const imgCell = r.image_url
-      ? `<img class="img-thumb" src="${r.image_url}" alt="${r.astronaut}" loading="lazy" onerror="this.style.display='none'" onclick="showModal('${r.image_url}')">`
+    const imgSrc = r.image_url || '';
+    const fallbackSrc = r.original_image_url || '';
+    const imgCell = imgSrc
+      ? `<img class="img-thumb" src="${imgSrc}" alt="${esc(r.astronaut)}" loading="lazy" onerror="if(this.dataset.tried!=='1'&&'${fallbackSrc}'){this.dataset.tried='1';this.src='${fallbackSrc}'}else{this.style.display='none'}" onclick="showModal(this.src)">`
       : '<span style="color:var(--text2)">—</span>';
     const notes = (r.notes || '').substring(0, 80) + ((r.notes || '').length > 80 ? '...' : '');
     return `<tr>
@@ -385,6 +395,40 @@ function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.
 function debounce(fn, ms) { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; }
 
 init();
+
+  // Render Top 30 References
+  const TOP_REFS = [
+    ['Omega X-33', 371], ['Casio G-Shock DW5600', 198], ['Omega Speedmaster', 143],
+    ['Seiko A829-6019', 104], ['Omega Speedmaster Moonwatch', 74], ['Seiko A829-6029', 66],
+    ['Timex Ironman', 38], ['Omega Speedmaster Alaska III', 36], ['Omega Speedmaster 105.012', 31],
+    ['Poljot 3133', 25], ['Casio AQ-100W', 17], ['Casio G-Shock DW500', 17],
+    ['Timex Ironman Datalink', 17], ['Omega Speedmaster 105.003', 14], ['Polar Accurex II', 14],
+    ['Breitling Aerospace', 14], ['Fortis Official Cosmonauts', 13], ['Omega Speedmaster Mark II', 12],
+    ['Seiko 7A28-7000', 11], ['Omega Flightmaster', 10], ['Casio G-Shock DW5900', 10],
+    ['Omega Speedmaster X-33 (2nd gen)', 9], ['Breitling Navitimer', 9], ['TAG Heuer S/el', 8],
+    ['Omega Speedmaster 145.012', 8], ['Casio W-86', 7], ['Rolex GMT-Master', 7],
+    ['Glycine Airman', 7], ['Bulova Accutron Astronaut', 6], ['Fortis B-42', 6]
+  ];
+  const maxRef = TOP_REFS[0][1];
+  const refColors = {omega:'#e55039',casio:'#3498db',seiko:'#2ecc71',timex:'#9b59b6',breitling:'#e67e22',rolex:'#00864e',poljot:'#e74c3c',fortis:'#1abc9c',tag:'#f39c12',glycine:'#e67e22',bulova:'#95a5a6',polar:'#3498db'};
+  function getRefColor(name) {
+    const n = name.toLowerCase();
+    for (const [k,v] of Object.entries(refColors)) { if (n.includes(k)) return v; }
+    return '#777';
+  }
+  document.getElementById('top-refs').innerHTML = TOP_REFS.map(([name, count], i) => {
+    const pct = (count / maxRef * 100).toFixed(1);
+    const color = getRefColor(name);
+    const rank = i + 1;
+    return `<div style="display:flex;align-items:center;gap:8px;font-size:.85rem">
+      <span style="color:var(--text2);min-width:24px;text-align:right">${rank}.</span>
+      <span style="min-width:180px;color:var(--text)">${name}</span>
+      <div style="flex:1;height:18px;background:var(--surface2);border-radius:3px;overflow:hidden">
+        <div style="width:${pct}%;height:100%;background:${color};border-radius:3px;display:flex;align-items:center;padding-left:6px;font-size:.7rem;color:#fff;font-weight:600">${count}</div>
+      </div>
+    </div>`;
+  }).join('');
+
 </script>
 </body>
 </html>
