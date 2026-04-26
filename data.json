@@ -704,7 +704,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Wally%20Schirra,%20Apollo%207,%201968.10.11.jpg"
   },
   {
-    "astronaut": "Michael J. Adams\u2020",
+    "astronaut": "Michael J. Adams†",
     "country": "United States",
     "mission": "X-15 Flight 191",
     "date": "1967-11-15",
@@ -2976,7 +2976,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Vladimir%20Lyakhov_Soyuz%2031_1979.02.24_Poljot_Gray%20dial.jpg"
   },
   {
-    "astronaut": "Vladim\u00edr Remek",
+    "astronaut": "Vladimír Remek",
     "country": "Czechoslovakia",
     "mission": "Soyuz 28",
     "date": "1978-03-02",
@@ -2992,7 +2992,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Valery%20Ryumin_Soyuz%2032_1979.02.25_Elektronika_Pulsar.%20-%201.jpg"
   },
   {
-    "astronaut": "Vladim\u00edr Remek",
+    "astronaut": "Vladimír Remek",
     "country": "Czechoslovakia",
     "mission": "Soyuz 28",
     "date": "1978-03-02",
@@ -3056,7 +3056,7 @@
     "original_image_url": "https://ostalgieruhla.wordpress.com/wp-content/uploads/2018/08/ruhla-calibre-24-33-chrome-tv-case-blue-dial.jpg"
   },
   {
-    "astronaut": "Miros\u0142aw Hermaszewski",
+    "astronaut": "Mirosław Hermaszewski",
     "country": "Poland",
     "mission": "Soyuz 30",
     "date": "1978-06-27",
@@ -3072,7 +3072,7 @@
     "original_image_url": "https://www.crazywatches.pl/images/upload/led/unitra3sanyoled1.jpg"
   },
   {
-    "astronaut": "Miros\u0142aw Hermaszewski",
+    "astronaut": "Mirosław Hermaszewski",
     "country": "Poland",
     "mission": "Soyuz 30",
     "date": "1978-06-27",
@@ -3084,8 +3084,8 @@
     "reference": "",
     "wrist": "",
     "notes": "Second Interkosmos mission",
-    "image_url": "",
-    "original_image_url": ""
+    "image_url": "images/3c0c88304fd9.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Poljot-Aviator-3133.jpg"
   },
   {
     "astronaut": "Petr Klimuk",
@@ -3104,7 +3104,7 @@
     "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Poljot-Aviator-3133.jpg"
   },
   {
-    "astronaut": "Sigmund J\u00e4hn",
+    "astronaut": "Sigmund Jähn",
     "country": "Germany",
     "mission": "Soyuz 31",
     "date": "1978-08-26",
@@ -3120,7 +3120,7 @@
     "original_image_url": "https://gdgwatch.com/cdn/shop/files/Untitleddesign-91-Rev1_23573802-e94f-491d-bc65-75e89072df6d.png?v=1717164142&width=720"
   },
   {
-    "astronaut": "Sigmund J\u00e4hn",
+    "astronaut": "Sigmund Jähn",
     "country": "Germany",
     "mission": "Soyuz 31",
     "date": "1978-08-26",
@@ -3360,7 +3360,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Leonid%20Kizim_Soyuz%20T-3_1980.11.27_Poljot_3133_soyuz-t-3.jpg"
   },
   {
-    "astronaut": "Ph\u1ea1m Tu\u00e2n",
+    "astronaut": "Phạm Tuân",
     "country": "Vietnam",
     "mission": "Soyuz 37",
     "date": "1980-07-23",
@@ -3376,7 +3376,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Oleg%20Makarov_Soyuz%20T-3_1980.11.27_Poljot_3133_soyuz-t-3.jpg"
   },
   {
-    "astronaut": "Ph\u1ea1m Tu\u00e2n",
+    "astronaut": "Phạm Tuân",
     "country": "Vietnam",
     "mission": "Soyuz 37",
     "date": "1980-07-23",
@@ -3424,7 +3424,7 @@
     "original_image_url": "http://rjjackson.com/images/space/John%20Young_STS-1_1981.04.12_Omega_Speedmaster_255-STS-sts001-007-547.jpg"
   },
   {
-    "astronaut": "Arnaldo Tamayo M\u00e9ndez",
+    "astronaut": "Arnaldo Tamayo Méndez",
     "country": "Cuba",
     "mission": "Soyuz 38",
     "date": "1980-09-18",
@@ -3533,7 +3533,7 @@
     "wrist": "",
     "notes": "Fifth and final resident crew of Salyut 6",
     "image_url": "images/ce8a3161077c.jpg",
-    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/96-Omega-Speedmaster-cadran-Guilt-Calibre-861-circa-1978-mostra-store-aix.jpg"
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Vintage_Omega_Speedmaster_%22Pre-moon%22.jpg"
   },
   {
     "astronaut": "Vladimir Kovalyonok",
@@ -3552,7 +3552,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "J\u00fcgderdemidiin G\u00fcrragchaa",
+    "astronaut": "Jügderdemidiin Gürragchaa",
     "country": "Mongolia",
     "mission": "Soyuz 39",
     "date": "1981-03-22",
@@ -3808,7 +3808,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jean-Loup%20Chre%cc%81tien_Soyuz%20T6_1982.06.24_Yema_Spationaute%20I%20-%201982_YEMA_SpationauteI_T6.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "Soyuz T-6",
     "date": "1982-06-24",
@@ -3824,7 +3824,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Vladimir%20Aleks%20Dzhanibekov_Salyut-7_1982_Omega_125.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "Soyuz T-6",
     "date": "1982-06-24",
@@ -7808,7 +7808,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Jerry%20L.%20Ross,%20STS-27,%201988.12.02_255-STS-S37-28-018.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "Soyuz TM-7",
     "date": "1988-11-26",
@@ -7824,7 +7824,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Richard%20Mullane_STS-27_1988.12.02_Seiko_A829-6019_255-STS-S27-15-016.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "Soyuz TM-7",
     "date": "1988-11-26",
@@ -10144,7 +10144,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Norman%20Thagard,%20M.D._STS-42_1992.01.22_Casio_Diver%20AMW-320C_255-STS-S42-05-006.jpg"
   },
   {
-    "astronaut": "Franz Viehb\u00f6ck",
+    "astronaut": "Franz Viehböck",
     "country": "Austria",
     "mission": "Soyuz TM-13",
     "date": "1991-10-02",
@@ -12328,7 +12328,7 @@
     "decade": "1990s",
     "program": "Soyuz",
     "watch_brand": "Yema",
-    "watch_model": "Alta\u00efr",
+    "watch_model": "Altaïr",
     "reference": "",
     "wrist": "Left",
     "notes": "14th resident crew of MIR; French mission ALTAIR",
@@ -12336,7 +12336,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jean-Pierre%20Haignere%cc%81_Soyuz%20TM-17_1993.07.01_Yema_Altai%cc%88r.jpg"
   },
   {
-    "astronaut": "Jean-Pierre Haigner\u00e9, EAC",
+    "astronaut": "Jean-Pierre Haigneré, EAC",
     "country": "France",
     "mission": "Soyuz TM-17",
     "date": "1993-07-01",
@@ -12347,7 +12347,7 @@
     "watch_model": "G-Shock DW5600",
     "reference": "",
     "wrist": "Right",
-    "notes": "14th resident crew of MIR; French mission ALTAIR, Mir Alta\u00efr",
+    "notes": "14th resident crew of MIR; French mission ALTAIR, Mir Altaïr",
     "image_url": "images/2bfd3231a439.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Carl%20Walz_STS-51_1993.09.12_Casio_G-Shock%20DW5600_255-STS-STS051-44-016.jpg"
   },
@@ -13243,7 +13243,7 @@
     "watch_model": "7T34-6A09",
     "reference": "",
     "wrist": "Left",
-    "notes": "Space Radar Laboratory (SRL-1); \u201c914\u201d on back",
+    "notes": "Space Radar Laboratory (SRL-1); “914” on back",
     "image_url": "images/dfdd9e4c99e4.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Carl%20Walz_STS-65_1994.07.08_Casio%20%3f_Uncertain_255-STS-STS065-215-010.jpg"
   },
@@ -13952,7 +13952,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Joseph%20Tanner_STS-66_1994.11.03_Uncertain_Uncertain_255-STS-STS066-14-011.jpg"
   },
   {
-    "astronaut": "Jean-Fran\u00e7ois Clervoy, EAC",
+    "astronaut": "Jean-François Clervoy, EAC",
     "country": "France",
     "mission": "STS-66",
     "date": "1994-11-03",
@@ -16235,12 +16235,12 @@
     "watch_model": "Aerospace",
     "reference": "",
     "wrist": "Right",
-    "notes": "22nd resident crew of MIR; French mission CASSIOP\u00c8E",
+    "notes": "22nd resident crew of MIR; French mission CASSIOPÈE",
     "image_url": "images/70e0373d1da9.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Claudie%20Andre%cc%81-Deshays_Soyuz%20TM-24_1996.08.17__%20-%20Andre%cc%81Deshays_cassiope%cc%81e.jpg"
   },
   {
-    "astronaut": "Claudie Haigner\u00e9, EAC",
+    "astronaut": "Claudie Haigneré, EAC",
     "country": "France",
     "mission": "Soyuz TM-24",
     "date": "1996-08-17",
@@ -16251,7 +16251,7 @@
     "watch_model": "JP200-4V",
     "reference": "",
     "wrist": "Right",
-    "notes": "22nd resident crew of MIR; French mission CASSIOP\u00c8E",
+    "notes": "22nd resident crew of MIR; French mission CASSIOPÈE",
     "image_url": "images/4951801f02a4.jpg",
     "original_image_url": "http://rjjackson.com/images/space2/Valery%20Korzun,%20Soyuz%20TM-24,%201996.08.17_255-STS-S79E5195.jpg"
   },
@@ -16267,7 +16267,7 @@
     "watch_model": "W-26",
     "reference": "",
     "wrist": "Left",
-    "notes": "22nd resident crew of MIR; French mission CASSIOP\u00c8E",
+    "notes": "22nd resident crew of MIR; French mission CASSIOPÈE",
     "image_url": "images/0d9d7ecacd70.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Carl%20Walz_STS-79_1996.09.16_Casio_Uncertain_255-STS-STS079-344-030.jpg"
   },
@@ -16568,7 +16568,7 @@
     "decade": "1990s",
     "program": "Space Shuttle",
     "watch_brand": "Meteorite",
-    "watch_model": "Quartz Alarm Chronograph VO41-9100 \u201c5D1227\u201d",
+    "watch_model": "Quartz Alarm Chronograph VO41-9100 “5D1227”",
     "reference": "",
     "wrist": "Left",
     "notes": "Mission ORFEUS-SPAS-02",
@@ -17136,7 +17136,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Eileen%20Collins_STS-84_1997.05.15_Timex%20_K-Cell%20(58)_255-STS-STS084-377-010.jpg"
   },
   {
-    "astronaut": "Jean-Fran\u00e7ois Clervoy, EAC",
+    "astronaut": "Jean-François Clervoy, EAC",
     "country": "France",
     "mission": "STS-84",
     "date": "1997-05-15",
@@ -17152,7 +17152,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jean-Franc%cc%a7ois%20Clervoy,%20EAC_STS-84_1997.05.15_Breitling_Aerospace_255-STS-STS084-311-018.jpg"
   },
   {
-    "astronaut": "Jean-Fran\u00e7ois Clervoy, EAC",
+    "astronaut": "Jean-François Clervoy, EAC",
     "country": "France",
     "mission": "STS-84",
     "date": "1997-05-15",
@@ -17616,7 +17616,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jean-Loup%20Chre%cc%81tien_STS-86_1997.09.26_Casio_G-Shock%20DW500_255-STS-STS086-376-036.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "STS-86",
     "date": "1997-09-26",
@@ -17632,7 +17632,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jean-Loup%20Chre%cc%81tien_STS-86_1997.09.26_Omega%20_Speedmaster_255-STS-STS086-373-002.jpg"
   },
   {
-    "astronaut": "Jean-Loup Chr\u00e9tien",
+    "astronaut": "Jean-Loup Chrétien",
     "country": "France",
     "mission": "STS-86",
     "date": "1997-09-26",
@@ -18096,7 +18096,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Dafydd%20Williams_STS-90_1998.04.17_Rolex_Submariner%205513_Detailed%20image%20-%20dave_williams_rolex.jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "Soyuz TM-27",
     "date": "1998-01-29",
@@ -18112,7 +18112,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Dafydd%20Williams_STS-90_1998.04.17_Seiko_6105_Detailed%20image%20-%20dave_williams_seiko_willard_1.jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "Soyuz TM-27",
     "date": "1998-01-29",
@@ -18128,7 +18128,7 @@
     "original_image_url": "http://rjjackson.com/images/space/James%20Pawelczyk_STS-90_1998.04.17_Omega%20_X-33%20Prototype_255-STS-S90E5015.jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "Soyuz TM-27",
     "date": "1998-01-29",
@@ -18896,7 +18896,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Jean-Pierre%20Haignere%cc%81,%20EAC,%20Soyuz%20TM-29,%201999.02.20_ESA_astronaut_Jean-Pierre_Haignere_onboard_Mir_pillars.jpg"
   },
   {
-    "astronaut": "Jean-Pierre Haigner\u00e9, EAC",
+    "astronaut": "Jean-Pierre Haigneré, EAC",
     "country": "France",
     "mission": "Soyuz TM-29",
     "date": "1999-02-20",
@@ -19296,7 +19296,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Janet%20L.%20Kavandi_STS-99_2000.02.11_Timex_Ironman%20_255-STS-sts099-320-018.jpg"
   },
   {
-    "astronaut": "Jean-Fran\u00e7ois Clervoy, EAC",
+    "astronaut": "Jean-François Clervoy, EAC",
     "country": "France",
     "mission": "STS-103",
     "date": "1999-12-20",
@@ -19312,7 +19312,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Kevin%20Kregel_STS-99_2000.02.11_Casio_G-Shock%20DW5600_255-STS-sts099-330-008.jpg"
   },
   {
-    "astronaut": "Jean-Fran\u00e7ois Clervoy, EAC",
+    "astronaut": "Jean-François Clervoy, EAC",
     "country": "France",
     "mission": "STS-103",
     "date": "1999-12-20",
@@ -20427,7 +20427,7 @@
     "watch_model": "G-Shock DW5600",
     "reference": "",
     "wrist": "Left",
-    "notes": "ISS Expedition 2, Mission ISS-07-5A.1 MPLM \"Leonardo\"; second resident crew of the ISS, ISS Expedition n\u00b02; TBD",
+    "notes": "ISS Expedition 2, Mission ISS-07-5A.1 MPLM \"Leonardo\"; second resident crew of the ISS, ISS Expedition n°2; TBD",
     "image_url": "images/875eecd48772.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Susan%20Helms_STS-102_2001.03.08_Casio_G-Shock%20DW5600C_255-STS-sts102-329-013.jpg"
   },
@@ -20928,7 +20928,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Claudie%20Haignere%cc%81_Soyuz%20TM-33_2001.10.21_Breitling_Aerospace%20with%20Logo%20-%201.jpg"
   },
   {
-    "astronaut": "Claudie Haigner\u00e9, EAC",
+    "astronaut": "Claudie Haigneré, EAC",
     "country": "France",
     "mission": "Soyuz TM-33",
     "date": "2001-10-21",
@@ -20939,7 +20939,7 @@
     "watch_model": "Aerospace",
     "reference": "",
     "wrist": "Right",
-    "notes": "Taxi crew 2 to the ISS; French 'Androm\u00e8de mission; T66801",
+    "notes": "Taxi crew 2 to the ISS; French 'Andromède mission; T66801",
     "image_url": "images/80e7ae2b0438.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Konstantin%20Kozeyev_Soyuz%20TM-33_2001.10.21_Breitling_Aerospace_iss003e7084.jpg"
   },
@@ -20955,7 +20955,7 @@
     "watch_model": "Aerospace",
     "reference": "",
     "wrist": "Left",
-    "notes": "Taxi crew 2 to the ISS; French 'Androm\u00e8de mission; Black dial/white hands/",
+    "notes": "Taxi crew 2 to the ISS; French 'Andromède mission; Black dial/white hands/",
     "image_url": "images/46e69de18ef8.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Konstantin%20Kozeyev_Soyuz%20TM-33_2001.10.21_Breitling_Aerospace_ISS-03_Soyuz_TM-33_Taxi_crewmembers_in_the_Zvezda_Service_Module.jpg"
   },
@@ -20971,7 +20971,7 @@
     "watch_model": "X-33",
     "reference": "",
     "wrist": "Right",
-    "notes": "Taxi crew 2 to the ISS; French 'Androm\u00e8de mission; TBD",
+    "notes": "Taxi crew 2 to the ISS; French 'Andromède mission; TBD",
     "image_url": "images/53ed2da76574.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Viktor%20M.%20Afanasyev_Soyuz%20TM-33_2001.10.21_Breitling_Aerospace_iss003e7084.jpg"
   },
@@ -20987,7 +20987,7 @@
     "watch_model": "Aerospace",
     "reference": "",
     "wrist": "Left",
-    "notes": "Taxi crew 2 to the ISS; French 'Androm\u00e8de mission; TBD",
+    "notes": "Taxi crew 2 to the ISS; French 'Andromède mission; TBD",
     "image_url": "images/58f511f35668.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Carl%20Walz_STS-108_2001.12.05_Suunto_Vector_255-STS-STS108-718-082.jpg"
   },
@@ -21003,7 +21003,7 @@
     "watch_model": "X-33",
     "reference": "",
     "wrist": "Left",
-    "notes": "Taxi crew 2 to the ISS; French 'Androm\u00e8de mission; Red Triangle Pip?",
+    "notes": "Taxi crew 2 to the ISS; French 'Andromède mission; Red Triangle Pip?",
     "image_url": "images/aed58cb3d9ac.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Daniel%20Bursch_STS-108_2001.12.05_Casio_G-Shock%20DW5600_255-STS-STS108-718-082.jpg"
   },
@@ -22312,7 +22312,7 @@
     "decade": "2000s",
     "program": "Soyuz",
     "watch_brand": "Casio",
-    "watch_model": "Protrek PRG-40. Triple sensor \u2018ABC\u2019",
+    "watch_model": "Protrek PRG-40. Triple sensor ‘ABC’",
     "reference": "",
     "wrist": "RAOS",
     "notes": "Eighth resident crew of the ISS; mission Cervantes",
@@ -22400,7 +22400,7 @@
     "original_image_url": "https://static.swatch.com/flikflak/images/product/ZFPNP043P/li100/ZFPNP043P_li100_ec002.jpg"
   },
   {
-    "astronaut": "Andr\u00e9 Kuipers",
+    "astronaut": "André Kuipers",
     "country": "Netherlands",
     "mission": "Soyuz TMA-4",
     "date": "2004-04-19",
@@ -23024,7 +23024,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jeffrey%20Williams_Soyuz%20TMA-8_2006.03.30_Omega%20_X-33_iss013e05853.jpg"
   },
   {
-    "astronaut": "Ni\u00e8 H\u01ceish\u00e8ng",
+    "astronaut": "Niè Hǎishèng",
     "country": "China",
     "mission": "Shenzhou VI",
     "date": "2005-10-12",
@@ -24096,7 +24096,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Stephen%20Frick_STS-122_2008.02.07_Yes_Inca_Detailed%20image%20-%20YES-in-space.jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "STS-122",
     "date": "2008-02-07",
@@ -24107,12 +24107,12 @@
     "watch_model": "E600",
     "reference": "",
     "wrist": "Left",
-    "notes": "ISS 1 E Columbus; E79362 Limited Edition, with applied P\u00e9gase mission logo",
+    "notes": "ISS 1 E Columbus; E79362 Limited Edition, with applied Pégase mission logo",
     "image_url": "images/017c655f94af.jpg",
     "original_image_url": "http://rjjackson.com/images/space/Dominic%20Gorie_STS-123_2008.03.11_Omega_X-33_255-STS-s123e008900.jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "STS-122",
     "date": "2008-02-07",
@@ -24128,7 +24128,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Gregory%20H.%20Johnson_STS-123_2008.03.11_Kobold_Phantom%20Tactical%20Chronograph%20PVD_255-STS-s123e005652%20(1).jpg"
   },
   {
-    "astronaut": "L\u00e9opold Eyharts, EAC",
+    "astronaut": "Léopold Eyharts, EAC",
     "country": "France",
     "mission": "STS-122",
     "date": "2008-02-07",
@@ -24497,7 +24497,7 @@
   },
   {
     "astronaut": "Yi So-yeon",
-    "country": "S\u00fcdkorea",
+    "country": "Südkorea",
     "mission": "Soyuz TMA-12",
     "date": "2008-04-08",
     "year": "2008",
@@ -24513,7 +24513,7 @@
   },
   {
     "astronaut": "Yi So-yeon",
-    "country": "S\u00fcdkorea",
+    "country": "Südkorea",
     "mission": "Soyuz TMA-12",
     "date": "2008-04-08",
     "year": "2008",
@@ -25504,7 +25504,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Jose%cc%81%20M.%20Herna%cc%81ndez_STS-128_2009.08.28_Omega_X-33_s128e007133.jpg"
   },
   {
-    "astronaut": "Jos\u00e9 M. Hern\u00e1ndez",
+    "astronaut": "José M. Hernández",
     "country": "United States",
     "mission": "STS-128",
     "date": "2009-08-28",
@@ -25568,7 +25568,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Guy%20Laliberte%cc%81_Soyuz%20TMA-16_2009.09.30_Uncertain_Uncertain.jpg"
   },
   {
-    "astronaut": "Guy Lalibert\u00e9",
+    "astronaut": "Guy Laliberté",
     "country": "Canada",
     "mission": "Soyuz TMA-16",
     "date": "2009-09-30",
@@ -27136,7 +27136,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Andre%cc%81%20Kuipers_Soyuz%20TMA-03M_2011.12.21_Polar_TBD_iss030e210788.jpg"
   },
   {
-    "astronaut": "Andr\u00e9 Kuipers",
+    "astronaut": "André Kuipers",
     "country": "Netherlands",
     "mission": "Soyuz TMA-03M",
     "date": "2011-12-21",
@@ -27152,7 +27152,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Andre%cc%81%20Kuipers_Soyuz%20TMA-03M_2011.12.21_Omega_X-33%202nd%20Gen_iss030e177373.jpg"
   },
   {
-    "astronaut": "Andr\u00e9 Kuipers",
+    "astronaut": "André Kuipers",
     "country": "Netherlands",
     "mission": "Soyuz TMA-03M",
     "date": "2011-12-21",
@@ -27168,7 +27168,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Donald%20Pettit_Soyuz%20TMA-03M_2011.12.21_Omega_X-33_iss030e049643.jpg"
   },
   {
-    "astronaut": "Andr\u00e9 Kuipers",
+    "astronaut": "André Kuipers",
     "country": "Netherlands",
     "mission": "Soyuz TMA-03M",
     "date": "2011-12-21",
@@ -27824,7 +27824,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Nie%cc%80%20Ha%cc%8cishe%cc%80ng_Shenzhou%20X_2013.06.11_Fiyta__1509301352592037518.jpg"
   },
   {
-    "astronaut": "Ni\u00e8 H\u01ceish\u00e8ng",
+    "astronaut": "Niè Hǎishèng",
     "country": "China",
     "mission": "Shenzhou X",
     "date": "2013-06-11",
@@ -29456,7 +29456,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Serena%20Aunon-Chancellor_Soyuz%20MS-09_2018.06.06_Omega_Seamaster%20Chronograph,%20two%20tone,%20300m%20-%201.jpg"
   },
   {
-    "astronaut": "Serena M. Au\u00f1\u00f3n-Chancellor",
+    "astronaut": "Serena M. Auñón-Chancellor",
     "country": "United States",
     "mission": "Soyuz MS-09",
     "date": "2018-06-06",
@@ -29472,7 +29472,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Serena%20M.%20Aun%cc%83o%cc%81n-Chancellor,%20Soyuz%20MS-09,%202018.06.06_Speedmaster.png"
   },
   {
-    "astronaut": "Serena M. Au\u00f1\u00f3n-Chancellor",
+    "astronaut": "Serena M. Auñón-Chancellor",
     "country": "United States",
     "mission": "Soyuz MS-09",
     "date": "2018-06-06",
@@ -29488,7 +29488,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Serena%20Aunon-Chancellor_Soyuz%20MS-09_2018.06.06_Timex_Timex%20Ironman%20T5K757.jpg"
   },
   {
-    "astronaut": "Serena M. Au\u00f1\u00f3n-Chancellor",
+    "astronaut": "Serena M. Auñón-Chancellor",
     "country": "United States",
     "mission": "Soyuz MS-09",
     "date": "2018-06-06",
@@ -29504,7 +29504,7 @@
     "original_image_url": "http://rjjackson.com/images/space/Sergei%20Prokopyev_Soyuz%20MS-09_2018.06.06_Omega_Speedmaster_41900265654_dce4323332_o.jpg"
   },
   {
-    "astronaut": "Serena M. Au\u00f1\u00f3n-Chancellor",
+    "astronaut": "Serena M. Auñón-Chancellor",
     "country": "United States",
     "mission": "Soyuz MS-09",
     "date": "2018-06-06",
@@ -31052,8 +31052,8 @@
     "reference": "",
     "wrist": "",
     "notes": "",
-    "image_url": "",
-    "original_image_url": ""
+    "image_url": "images/9e77a827a6d8.jpg",
+    "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Sturm-1.jpg"
   },
   {
     "astronaut": "Yusaku Maezawa",
@@ -31232,7 +31232,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Kjell%20Lindgren,%20Dragon%20Crew%204,%202022.04.27%20-%2052099305880_3f07b0dac3_o.jpg"
   },
   {
-    "astronaut": "Michael L\u00f3pez-Alegr\u00eda",
+    "astronaut": "Michael López-Alegría",
     "country": "United States and Spain",
     "mission": "Axiom Mission 1",
     "date": "2022-04-08",
@@ -31376,7 +31376,7 @@
     "original_image_url": "http://rjjackson.com/images/space2/Anna%20Kikina,%20Dragon%20Crew%205,%202022.10.05%20-%20Omega%20X33.jpg"
   },
   {
-    "astronaut": "M\u00e1rio Ferreira Portugal",
+    "astronaut": "Mário Ferreira Portugal",
     "country": "",
     "mission": "NS22",
     "date": "2022-08-05",
@@ -32512,7 +32512,7 @@
     "original_image_url": "reused from Omega X-33 record"
   },
   {
-    "astronaut": "Alper Gezeravc\u0131",
+    "astronaut": "Alper Gezeravcı",
     "country": "Turkey",
     "mission": "Axiom Mission 3",
     "date": "2024-01-18",
@@ -32544,7 +32544,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "Michael L\u00f3pez-Alegr\u00eda",
+    "astronaut": "Michael López-Alegría",
     "country": "United States / Spain",
     "mission": "Axiom Mission 3",
     "date": "2024-01-18",
@@ -33520,7 +33520,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "Jes\u00fas Calleja",
+    "astronaut": "Jesús Calleja",
     "country": "Spain",
     "mission": "NS30",
     "date": "2025-02-25",
@@ -33888,7 +33888,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "Lauren S\u00e1nchez",
+    "astronaut": "Lauren Sánchez",
     "country": "United States",
     "mission": "NS31",
     "date": "2025-04-14",
@@ -33984,7 +33984,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "Jaime Alem\u00e1n",
+    "astronaut": "Jaime Alemán",
     "country": "Panama",
     "mission": "NS32",
     "date": "2025-05-31",
@@ -34080,7 +34080,7 @@
     "original_image_url": ""
   },
   {
-    "astronaut": "S\u0142awosz Uzna\u0144ski-Wi\u015bniewski",
+    "astronaut": "Sławosz Uznański-Wiśniewski",
     "country": "Poland",
     "mission": "Axiom Mission 4, Grace",
     "date": "2025-06-25",
@@ -34096,7 +34096,7 @@
     "original_image_url": "https://www.breitling.com/cdn-cgi/image/format=auto,width=2040,fit=cover,gravity=0x0/api/image-proxy/www-breitling.eu.saleor.cloud/media/thumbnails/products/lb0240211c1p1-soldier_c40ca6f9_thumbnail_1024.webp"
   },
   {
-    "astronaut": "S\u0142awosz Uzna\u0144ski-Wi\u015bniewski",
+    "astronaut": "Sławosz Uznański-Wiśniewski",
     "country": "Poland",
     "mission": "Axiom Mission 4, Grace",
     "date": "2025-06-25",
@@ -34320,7 +34320,7 @@
     "original_image_url": "https://cdn.watchbase.com/watch/lg/omega/speedmaster/310-30-42-50-01-001-a2.jpg"
   },
   {
-    "astronaut": "G\u00f6khan Erdem",
+    "astronaut": "Gökhan Erdem",
     "country": "Turkey",
     "mission": "NS34",
     "date": "2025-08-03",
