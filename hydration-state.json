@@ -474,7 +474,15 @@
     2180,
     2181,
     2182,
-    2183
+    2183,
+    43,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13
   ],
   "succeeded": [
     19,
@@ -725,7 +733,15 @@
     2180,
     2181,
     2182,
-    2183
+    2183,
+    43,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    13
   ],
   "failed": [
     46,
@@ -953,7 +969,7 @@
     2165,
     2166
   ],
-  "last_run": "2026-05-27T19:06:48Z",
+  "last_run": "2026-06-13T11:11:06Z",
   "hydration_complete": true,
   "completion_note": "All 473 actionable records processed. 243 succeeded, 230 failed (224 Unknown/Uncertain + 6 brand-only without model info). No remaining records to process."
 }
