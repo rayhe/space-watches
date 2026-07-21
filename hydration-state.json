@@ -969,7 +969,7 @@
     2165,
     2166
   ],
-  "last_run": "2026-06-13T11:11:06Z",
+  "last_run": "2026-07-21T15:06:04Z",
   "hydration_complete": true,
-  "completion_note": "All 473 actionable records processed. 243 succeeded, 230 failed (224 Unknown/Uncertain + 6 brand-only without model info). No remaining records to process."
+  "completion_note": "All 224 remaining records are unsearchable: 213 unknown/empty brand+model, 5 uncertain brand with vague model, 6 known brand with no model. 1960/2184 (89.7%) have images."
 }
