@@ -969,7 +969,7 @@
     2165,
     2166
   ],
-  "last_run": "2026-08-28T13:04:27Z",
+  "last_run": "2026-08-28T15:04:31Z",
   "hydration_complete": true,
   "completion_note": "All 2184 records attempted. 1960 have images (89.7%). 224 failures: 212 empty brand/model, 6 Unknown/Uncertain, 6 with brand-only (no model). Remaining failures have insufficient info to identify specific watch.",
   "status": "complete"
